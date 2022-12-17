@@ -12,7 +12,7 @@ const authToken = process.env.TWILLIO_TOKEN;
 const client = twillio(accountSid, authToken);
 
 app.listen(process.env.PORT, () => {
-  cron.schedule("* */6 * * *", () => {
+  cron.schedule("0 8 * * *", () => {
 console.log('cron running');
     client.messages
       .create({
