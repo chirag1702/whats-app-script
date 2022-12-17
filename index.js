@@ -18,9 +18,10 @@ console.log('cron running');
       .create({
         from: "whatsapp:+14155238886",
         body: "Gaurav ka birthday aa raha hai",
-        to: "whatsapp:+916375528478",
+        to: "whatsapp:+917665135624",
       })
-      .then((message) => console.log(message.sid));
+      .then((message) => console.log(message.sid)).catch(error => console.log(error)
+);
   });
   console.log("cron job scheduled");
 });
